@@ -1,0 +1,38 @@
+/***
+ * Name: accordion.css
+ * Date: Wed 8 Jan 2014
+ * Author: Noemi Losada Estrella
+ ***/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.3em;
+    margin: 20px auto;
+    width: 600px;
+}
+
+.ninja {
+    display: none;
+}
+
+#booAccordion {
+    text-align: center;
+}
+
+#booAccordion dt {
+    background-color: #bbb;
+    border-bottom: 1px solid #aaa;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#booAccordion dd {
+    padding: 20px;
+}
