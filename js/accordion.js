@@ -1,7 +1,7 @@
 /**
  * @Name: accordion.js
  * @Date: Wed 8 Jan 2014
- * @Author: Noemi Losada Estrella
+ * @Author: Noemi Losada Estrella <info@noemilosada.com>
  */
 
 (function() {
@@ -10,8 +10,9 @@
      * Default options
      */
     var defaults = {
-        speed: 300,
-        action: 'mouseover'
+        speed: 200,
+        action: 'click',
+        animation: 'slide'
     };
 
     /**
@@ -29,7 +30,8 @@
      * Usage:
      * $('#booAccordion').booAccordion({
      *     speed: 500,
-     *     action: 'click'
+     *     action: 'click',
+     *     animation: false
      * });
      *
      * @return object this
@@ -65,16 +67,17 @@
      * accordion function
      *
      * @params object opts
+     * @params string selector
      * @return void
      */
     function accordion(selector, opts) {
         // On click a title open his related content
         $(selector).on(opts.action, config.dt, function() {
-            $(this)
-                .next()
-                    .slideDown(opts.speed)
-                    .siblings(config.dd)
-                        .slideUp(opts.speed);
+            if (opts.animation === 'slide') {
+                $(this).next().slideDown(opts.speed).siblings(config.dd).slideUp(opts.speed);
+            } else {
+                $(this).next().show().siblings(config.dd).hide();
+            }
         });
     }
 
