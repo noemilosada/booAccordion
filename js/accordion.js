@@ -59,7 +59,7 @@
         // Save options for the current instance
         this.data(options);
 
-        // Call to the main function which the accordion effects
+        // Call to the accordion effects function
         accordion(this.selector, options);
     }
 
@@ -71,7 +71,7 @@
      * @return void
      */
     function accordion(selector, opts) {
-        // On click a title open his related content
+        // On click a title: open his related content
         $(selector).on(opts.action, config.dt, function() {
             if (opts.animation === 'slide') {
                 $(this).next().slideDown(opts.speed).siblings(config.dd).slideUp(opts.speed);
