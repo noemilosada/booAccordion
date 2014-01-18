@@ -1,6 +1,6 @@
-booAccordion jQuery plugin
-==========================
---------------------------
+**booAccordion jQuery plugin**
+==============================
+------------------------------
 
 **HTML Structure**
 
