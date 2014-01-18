@@ -1,5 +1,5 @@
 /**
- * @Name: accordion.js
+ * @Name: booAccordion.js
  * @Date: Wed 8 Jan 2014
  * @Author: Noemi Losada Estrella <info@noemilosada.com>
  */
