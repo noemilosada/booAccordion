@@ -29,7 +29,7 @@ $('#yourAccordionCustomId').booAccordion({
 This will be the speed to open the expandable content once you click on the title.    
 The default option is 200.   
    
-```action:``` 'click' / 'mouseover' / 'mouseenter'
+```action:``` 'click' / 'mouseover' / 'mouseenter'   
 The way to expand the content can be click or mouseover/mouseenter on the title.   
 The default option is 'click'.   
    
