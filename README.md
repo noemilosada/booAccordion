@@ -20,3 +20,4 @@ $('#yourAccordionCustomId').booAccordion({
     action: 'click',
     animation: 'slide',
 });
+```
