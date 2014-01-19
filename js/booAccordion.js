@@ -2,6 +2,7 @@
  * @Name: booAccordion.js
  * @Date: Wed 8 Jan 2014
  * @Author: Noemi Losada Estrella <info@noemilosada.com>
+ * Creative Commons License <http://creativecommons.org/licenses/by-sa/3.0/>
  */
 
 (function() {
