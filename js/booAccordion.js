@@ -75,9 +75,9 @@
         // On click a title: open his related content
         $(selector).on(opts.action, config.dt, function() {
             if (opts.animation === 'slide') {
-                $(this).next().slideDown(opts.speed).siblings(config.dd).slideUp(opts.speed);
+                $(this).next().slideToggle(opts.speed).siblings(config.dd).slideUp(opts.speed);
             } else {
-                $(this).next().show().siblings(config.dd).hide();
+                $(this).next().toggle().siblings(config.dd).hide();
             }
         });
     }
