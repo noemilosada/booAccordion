@@ -8,7 +8,11 @@
 (function() {
 
     /**
-     * Default options
+     * Default options which will be
+     * override by the given ones
+     *
+     * @property defaults
+     * @type {Object}
      */
     var defaults = {
         speed: 200,
@@ -18,6 +22,9 @@
 
     /**
      * Config elements
+     *
+     * @property config
+     * @type {Object}
      */
     var config = {
         dt: 'dt',
@@ -26,7 +33,7 @@
     };
 
     /**
-     * booAccordion plugin
+     * Main booAccordion plugin function
      *
      * Usage:
      * $('#booAccordion').booAccordion({
@@ -35,7 +42,8 @@
      *     animation: false
      * });
      *
-     * @return object this
+     * @method booAccordion
+     * @return {Object} this
      */
     $.fn.booAccordion = function() {
         // Initialize the plugin with the given arguments
@@ -45,10 +53,12 @@
     };
 
     /**
-     * init function
+     * Initialise instance and extend
+     * the given options
      *
-     * @params object opts
-     * @return void
+     * @method init
+     * @param {Object} opts
+     * @return {void}
      */
     function init(opts) {
         // Hide all the items except the first
@@ -65,11 +75,12 @@
     }
 
     /**
-     * accordion function
+     * Main function with the accordion animation
      *
-     * @params object opts
-     * @params string selector
-     * @return void
+     * @method accordion
+     * @param {Object} opts
+     * @param {String} selector
+     * @return {void}
      */
     function accordion(selector, opts) {
         // On click a title: open his related content
