@@ -65,13 +65,13 @@
         $(config.dd).filter(':nth-child(n+3)').addClass(config.hide);
 
         // Override default options with the custom ones
-        var options = $.extend(defaults, opts);
+        var options = $.extend({}, defaults, opts);
 
         // Save options for the current instance
         this.data(options);
 
         // Call to the accordion effects function
-        accordion(this.selector, options);
+        accordion(this, options);
     }
 
     /**
